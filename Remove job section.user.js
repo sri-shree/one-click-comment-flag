@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Remove job section
-// @namespace    https://github.com/wimglenn/userscripts/
+// @namespace    
 // @version      0.1
 // @description  Hides the job section
 // @author       Shree: https://stackoverflow.com/users/965146/shree
