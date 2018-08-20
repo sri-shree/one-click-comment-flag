@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Remove job section
+// @name         Hide job section
 // @namespace    https://github.com/sri-shree/Remove-job-section-from-SO-site/raw/master/Remove%20job%20section.user.js
 // @version      0.1
-// @description  Hides the job section
+// @description  Hide job section
 // @author       Shree: https://stackoverflow.com/users/965146/shree
 // @include      /^https?:\/\/\w*.?(stackexchange.com|stackoverflow.com|serverfault.com|superuser.com|askubuntu.com|stackapps.com|mathoverflow.net)\/questions/.*
 // @grant        none
