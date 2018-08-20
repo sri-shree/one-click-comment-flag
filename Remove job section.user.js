@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Remove job section
-// @namespace    
+// @namespace    https://github.com/sri-shree/Remove-job-section-from-SO-site/raw/master/Remove%20job%20section.user.js
 // @version      0.1
 // @description  Hides the job section
 // @author       Shree: https://stackoverflow.com/users/965146/shree
