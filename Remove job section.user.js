@@ -18,7 +18,8 @@
 function removehireme() {
     "use strict";
     var bs = document.getElementById("hireme")
-    bs.remove();
+    if(bs.length >=0)
+        bs.remove();
 };
 
 $(document).ready(function() {
