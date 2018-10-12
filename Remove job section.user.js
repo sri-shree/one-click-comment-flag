@@ -15,14 +15,31 @@
 // @include /^https?:\/\/stackapps\.com/.*$/
 // ==/UserScript==
 
-function removehireme() {
-    "use strict";
-    var element = document.getElementById("hireme")
-    if (element != null && element.value == '') {
-        bs.remove();
+function removeHireme() {
+    var element = $("#hireme");
+    if (element.length >= 1){
+        element.remove();
     }
 };
-
+function removeGoogleAd()
+{
+    $('<style type="text/css">#google_image_div {display: none;}</style>')
+        .appendTo($('head'));
+};
+function removeNewContributor() {
+    $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
+        .appendTo($('head'));
+};
+function removeAftercommentFlagPopUp()
+{
+    var elm = $(".js-stacks-managed-popup");
+    if (elm.length >= 1){
+        $(".js-stacks-managed-popup").remove();
+    }
+}
 $(document).ready(function() {
-  removehireme();
+    removeHireme();
+    removeNewContributor();
+    removeAftercommentFlagPopUp();
+
 });
