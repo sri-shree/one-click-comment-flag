@@ -30,16 +30,8 @@ function removeNewContributor() {
     $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
         .appendTo($('head'));
 };
-function removeAftercommentFlagPopUp()
-{
-    var elm = $(".js-stacks-managed-popup");
-    if (elm.length >= 1){
-        $(".js-stacks-managed-popup").remove();
-    }
-}
 $(document).ready(function() {
     removeHireme();
     removeNewContributor();
-    removeAftercommentFlagPopUp();
-
+   
 });
