@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide job section
+// @name         Hide job section / Hide New Contributor Indicator
 // @namespace    https://github.com/sri-shree/Remove-job-section-from-SO-site
 // @version      0.1
 // @description  Hide job section
@@ -23,15 +23,15 @@ function removeHireme() {
 };
 function removeGoogleAd()
 {
-    $('<style type="text/css">#google_image_div {display: none;}</style>')
-        .appendTo($('head'));
+     $("#google_image_div").css({ "display" : "none" });
 };
 function removeNewContributor() {
-    $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
-        .appendTo($('head'));
+    $(".new-contributor-indicator").css({ "display" : "none" });
 };
-$(document).ready(function() {
+
+$(function() {
     removeHireme();
     removeNewContributor();
-   
+    removeGoogleAd();
+
 });
