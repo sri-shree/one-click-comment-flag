@@ -16,14 +16,11 @@
 // ==/UserScript==
 
 function removeHireme() {
-    var element = $("#hireme");
-    if (element.length >= 1){
-        element.remove();
-    }
+    $("#hireme").css({ "display" : "none" });
 };
 function removeGoogleAd()
 {
-     $("#google_image_div").css({ "display" : "none" });
+    $("#google_image_div").css({ "display" : "none" });
 };
 function removeNewContributor() {
     $(".new-contributor-indicator").css({ "display" : "none" });
