@@ -18,12 +18,15 @@
 function removeHireme() {
     $("#hireme").css({ "display" : "none" });
 };
-function removeGoogleAd()
-{
+function removeGoogleAd(){
+
     $("#google_image_div").css({ "display" : "none" });
 };
 function removeNewContributor() {
-    $(".new-contributor-indicator").css({ "display" : "none" });
+
+  //  $(".new-contributor-indicator").css({ "display" : "none" });
+    $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
+    .appendTo($('head'));
 };
 
 $(function() {
