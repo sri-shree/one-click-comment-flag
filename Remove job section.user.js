@@ -15,14 +15,43 @@
 // @include /^https?:\/\/stackapps\.com/.*$/
 // ==/UserScript==
 
-function removeHireme() {
-    $("#hireme").css({ "display" : "none" });
-};
-function removeGoogleAd(){
+function CheckCommentflag(){
 
-    $("#google_image_div").css({ "display" : "none" });
-};
+    $(document).ajaxComplete(function(event, jqXHR, options) {
+
+
+        if (options.type === 'GET' && /\/flags\/comments\/\d+\/popup/.test(options.url)) {
+            let remainFlag = $('.js-modal-dialog').find('div.fc-light').text().split(' ')[2];
+            alert(remainFlag);
+            $('.js-modal-initial-focus').removeClass('js-modal-initial-focus');
+            $('#comment-flag-type-CommentNoLongerNeeded')
+                .click()
+                .focus()
+                .addClass('js-modal-initial-focus')
+                .closest('.js-modal-dialog')
+                .find('button.js-modal-submit')
+                .prop('disabled', null);
+
+
+            $('.js-modal-dialog').find('button.js-modal-submit').trigger('click');
+
+        }
+
+    });
+
+}
+
 function removeNewContributor() {
+    //  $(".new-contributor-indicator").css({ "display" : "none" });
+    $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
+        .appendTo($('head'));
+};
+
+$(function() {
+    removeNewContributor();
+    CheckCommentflag();
+
+});
 
   //  $(".new-contributor-indicator").css({ "display" : "none" });
     $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
