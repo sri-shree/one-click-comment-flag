@@ -1,6 +1,6 @@
-# Remove Job section and New Contributor  from SO site
+# One click comment flag as "no longer needed" + hide  new Contributor (2 in 1)
 Remove (Hide) job section from SO site
 
-Use this user script to hide jobsection and New Contributor part on SO site. All suggestion and improvement are welcome.
+One click comment flag as "no longer needed" + hide  new Contributor
 
 
