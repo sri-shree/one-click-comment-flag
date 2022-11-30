@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         One Click Comment Flag
+// @name        Tick NLN comment option by default
 // @namespace    https://github.com/sri-shree/Remove-job-section-from-SO-site
 // @version      0.1
 // @description  Hide job section
