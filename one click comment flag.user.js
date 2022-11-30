@@ -8,7 +8,7 @@
 // @include /^https?:\/\/(.*\.)?stackoverflow\.com/.*$/
 // ==/UserScript==
 
-function CheckCommentflag(){
+function Tick_NLN_CommentOption(){
 
     $(document).ajaxComplete(function(event, jqXHR, options) {
 
@@ -30,13 +30,7 @@ function CheckCommentflag(){
    });
 }
 
-function removeNewContributor() {
-    //  $(".new-contributor-indicator").css({ "display" : "none" });
-    $('<style type="text/css">.new-contributor-indicator {display: none;}</style>')
-        .appendTo($('head'));
-};
 
 $(function() {
-    removeNewContributor();
-    CheckCommentflag();
+    Tick_NLN_CommentOption();
 });
